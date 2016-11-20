@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[letterpaper,margin=0.9in]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+%\usepackage{tgschola} % or any other font package you like
+
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[C]{%
+%	\footnotesize\sffamily
+%	\yourname\quad
+%	web: \textcolor{blue}{\itshape\yourweb}\quad
+%	\textcolor{blue}{\youremail}}
+
+\newcommand{\soptitle}{Statement of Purpose}
+\newcommand{\yourname}{Subhajit Chaudhury}
+\newcommand{\youremail}{email@address.edu}
+\newcommand{\yourweb}{https://www.abcd.com/}
+
+\newcommand{\statement}[1]{\par\medskip
+	{\textcolor{black}{\textbf{#1:}}}\space
+}
+
+\usepackage[
+colorlinks,
+breaklinks,
+pdftitle={\yourname - \soptitle},
+pdfauthor={\yourname},
+unicode
+]{hyperref}
+
+\begin{document}
+	
+	\begin{center}\LARGE\soptitle\\
+	\large \yourname\ (ECE PhD applicant for Fall 2017)
+	\end{center}
+	
+	\hrule
+	%\vspace{1pt}
+	\hrule height 1pt
+	
+	\bigskip
+	
+	My research interest lies in the field of Computer Vision, Graphics and Artificial Intelligence. I am currently a researcher at NEC Central research labs working on vision based infrastructure maintenance using deep learning techniques. Prior to this, I got my masters in Electrical Engineering from IIT Bombay in 2014. With recent developments in the field of deep hierarchical models and availability of large databases, I believe that there is immense scope of future research on developing deep learning approaches for computational photography and 3D geometrical analysis. I am interested to work with light-field datasets to infer accurate 3D scene geometry and also other high level vision task like recognition in 3D space, although I am open to work on other topics as well. After my PhD I wish to continue as a teacher and researcher in academia.
+	
+	\vspace*{-0.25cm}
+	\section{Academic Research}
+		\vspace*{-0.25cm}
+	During my post-graduation in IIT Bombay, I worked in the area of Computer Graphics and Vision and Human Computer Interaction (Haptics) under the supervision of Prof. Subhasis Chaudhuri. My primary contribution was designing volume preserving deformations with real-time graphical rendering and force computation for tactile feedback. This work was accepted as an oral paper in\textit{ IEEE Haptic Symposium}, a top-tier conference in the field of Haptics. I will briefly describe this work and my other work on real-time human pose estimation as follows.
+	
+	\statement{Volume preserving Haptic Pottery}
+	I developed a volume preserving deformable model where users can interact with rotating virtual clay to give it desired shape while getting real-time force feedback. While this required force computations at 1 KHz rate and graphical rendering at 25 Hz for smooth user experience, existing methods for volume preserving deformations required rendering time in the order of seconds. I proposed a deformable model consisting of circular symmetrical basis elements that dynamically alter their physical dimensions and configuration according to user interaction. The simple design of the clay model enabled real-time force computations and graphical rendering while producing very similar deformation results to real life pottery.
+	
+	\statement{Human pose estimation for virtual cloth fitting}
+	 While mentoring intern students at Vision and Image Processing lab at IIT Bombay, I worked on a project to develop a  virtual cloth fitting system using 2D video stream of the users from a generic web-camera with no depth perception. Real-time cloth fitting was achieved by computing affine transformations of input cloth to fit the human pose obtained by frame-wise key-point extraction. This work was accepted in \textit{ICVGIP 2014} which is a top computer vision conference in India.
+	
+	\vspace{0.1cm}
+	 I also proposed a virtual reality chat system where users can get tactile feedback from a wearable haptic suit on touching objects in a shared multi-client virtual space. This work was filed as a patent at IIT Bombay. I have been part of several course projects also that helped me learn fundamentals in Computer Vision and Graphics. Other projects in my under-graduate study include "vision based door detection for autonomous robot navigation using fuzzy classifier" and "error minimization in high voltage measurements using polynomial regression methods". Every project that I was a part of gave me relevant technical knowledge and incited a desire in me to learn more and solve difficult problems in this field which is exactly my motivation for graduate(PhD) study.
+
+	\vspace*{-0.25cm}
+	\section{Industry research}
+	\vspace*{-0.25cm}
+	My exposure to numerous research projects during my academics combined with demonstrated ability to publish in good academic conferences helped me to directly join NEC research labs in Japan after my M.Tech. I am primarily working on the following computer vision methods for crack detection in concrete surfaces.
+	
+	\statement{Spatial-temporal motion analysis for structured crack detection}
+	Several computer vision methods for crack detection have been proposed in literature that can accurately localize visible and developed cracks from images of concrete. However there is a demand to detect cracks at an early stage when they are invisible in captured images where traditional methods are not suitable. I developed an algorithm which instead analyzes motion fields obtained by frame-wise optical flow from captured videos to find local strain discontinuity. I formulated crack localization as an energy minimization problem in Conditional Random Fields (CRF) framework with a prior on spatial distribution of cracks to enable robust structured crack detection. This work is currently under review for WACV 2017. 
+	
+	\statement{Attention-based crack detection using Recurrent Fully Convolutional Networks}
+	Conventional methods in image based crack detection indiscriminately employ patch-wise detection at all pixels and accumulate local detections in a non-context aware fashion. Inspired by human visual system, which traces crack contours by shifting visual attention based on a holistic context, I proposed a neural attention based crack detection algorithm. The system is made context aware by employing recurrent fully convolutional networks for local crack segmentation with fully differentiable read and write operation for shifting visual attention. This is currently a work in progress which has exposed me to the very recent literature in sequential prediction using Recurrent Neural Networks (RNN) and neural attention models.
+	
+	\vspace{0.1cm}
+	I was also involved in other projects like reconstructing 3D non-rigid deformations under vehicular loading of concrete slabs from monocular image sequences and phase based video motion magnification (based on MIT CSAIL) for analyzing minute motion patterns in concrete around cracks. Along-side research at NEC, I also pursue personal research on fully convolutional image restoration and texture generation by generative adversarial networks (GANs). Research projects at NEC, along with the my personal projects, have helped me keep up with recent trends in the field of computer vision and deep learning which has provided necessary groundwork to uncover interesting problems to pursue in my PhD studies which I will discuss in the research plan section. Details about all my research projects and my full publication list can be found at my website: https://sites.google.com/site/subhaweb1411/.
+
+	\vspace*{-0.25cm}
+	\section{Relevant Coursework}
+	\vspace*{-0.25cm}
+	Although my primary focus has always been on project based learning, my avid interest in concise theoretical understanding of fundamental concepts, enabled me to constantly perform well in class. I completed my bachelors from Jadavpur University in Electrical Engineering with a CGPA 8.9/10 (absolute grading) securing a departmental rank of 3rd/125 students. During my post-graduation at IIT Bombay, I attended courses on Computer Vision, Computer Graphics and Machine learning through which I developed my interest and started thinking of pursuing PhD in these topics. The courses on Linear Algebra, Statistical Signal Analysis and Wavelets significantly strengthened my mathematical foundations. I graduated from IIT Bombay with a CPI of 9.81/10 securing a class rank of 2nd/24 graduate students in my specialization.
+	
+	
+	\vspace*{-0.25cm}
+	\section{Research Plan}
+	\vspace*{-0.25cm}
+	Through two years of industrial research after my M.Tech, I gained knowledge about the important and interesting problems to be solved in the field of Computer Vision and Graphics. Particularly I am very passionate in solving deep learning based 3D geometry reconstruction and analysis problems. While high level vision tasks like object detections, classification, multi-label segmentation etc have seen significant improvements in performance due to these data hungry, non-linear and deep hierarchical networks there has been limited research on deep learning based 3D scene and object manipulation. There is an immense scope of research in this topic which is also recognized by the computer vision community due to recent workshops and tutorials related to this topic in major conferences ('Geometry meets Deep Learning' in ECCV2016 is an example). 
+
+\end{document}

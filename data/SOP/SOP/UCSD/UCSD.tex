@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+%\usepackage{tgschola} % or any other font package you like
+
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[C]{%
+%	\footnotesize\sffamily
+%	\yourname\quad
+%	web: \textcolor{blue}{\itshape\yourweb}\quad
+%	\textcolor{blue}{\youremail}}
+
+\newcommand{\soptitle}{Statement of Purpose}
+\newcommand{\yourname}{Subhajit Chaudhury}
+\newcommand{\youremail}{email@address.edu}
+\newcommand{\yourweb}{https://www.abcd.com/}
+
+\newcommand{\statement}[1]{\par\medskip
+	{\textcolor{black}{\textbf{#1:}}}\space
+}
+
+\usepackage[
+colorlinks,
+breaklinks,
+pdftitle={\yourname - \soptitle},
+pdfauthor={\yourname},
+unicode
+]{hyperref}
+
+\begin{document}
+	
+	\begin{center}\LARGE\soptitle\\
+	\large \yourname\ (ECE PhD applicant for Fall 2017) \\ University of California, San Diego
+	\end{center}
+	
+	\hrule
+	%\vspace{1pt}
+	\hrule height 1pt
+	
+	\bigskip
+	
+	My research interest lies in the field of Computer Vision, Graphics and Artificial Intelligence. I am currently a researcher at NEC Central research labs working on vision based infrastructure maintenance using deep learning techniques. Prior to this, I got my masters in Electrical Engineering from Indian Institute of Technology (IIT), Bombay in 2014. With recent developments in the field of deep hierarchical models and availability of large image databases, I believe that there is immense scope of future research on developing deep learning approaches for computational photography and 3D geometrical analysis. I am particularly interested to work with light-field datasets for accurate depth estimation, image manipulation and related computational photography tasks. I am open to work on other topics as well. After my PhD I wish to continue as a teacher and researcher in academia.
+	
+	\vspace{0.2cm}
+	
+	Right from my high school days, I have always been keen on gaining knowledge through hands-on projects and experiments. I have had my share of scolding in my high school days when I often used to blow my house fuse trying to pass electricity through salt water, or trying to create electromagnet by passing current through a solenoid. As is quite clear, my obsession with electricity in high school led me to choose Electrical Engineering as my major for graduation at Jadavpur University. It was while working on a project on Face Recognition using Zernike Moments by Nearest Neighbor classifier in my 3rd year of undergraduate study, that I found my interest in the field of Computer Vision and Machine learning. This led to me to work on vision based door detection for autonomous robot navigation using fuzzy classifier under Prof. Amitava Chatterjee, which obtained around 85\% accuracy on real door datasets. I also worked on reducing errors in high voltage measurement by learning error characteristics using polynomial regression methods, which was published in IEEE CALCON conference in 2011.
+	
+	\vspace{0.2cm}
+	
+	Looking to delve deeper into research on Computer Vision, I decided to pursue M.tech at IIT Bombay for the next two years. I worked in the area of Computer Vision, Graphics and Human Computer Interaction under the supervision of Prof. Subhasis Chaudhuri. My notable contribution was modeling volume preserving virtual clay deformations with real-time interactive graphical rendering and force computation for tactile feedback with application to an immersive virtual pottery making system. The simple design of my proposed deformable virtual clay model allowed real time force computation at 1 KHz and graphical rendering at 25 fps, while producing very similar deformation results to real life pottery. This work was accepted as an oral paper in IEEE HAPTICS, a top-tier conference in the field of Haptics. I also patented a virtual reality chat system where users can get tactile feedback from a wearable suit on touching objects in a shared multi-client virtual space. While mentoring intern students at Vision and Image Processing lab at IIT Bombay, I worked on a project to develop a real-time virtual cloth fitting system using 2D video stream which was accepted in ICVGIP 2014, a top computer vision conference in India. I have also been a part of several course projects, that helped me learn fundamentals in Computer Vision and Graphics. Every project that I have worked on, gave me relevant technical knowledge in my field of interest and incited a desire in me to learn more and solve difficult problems in this field which is exactly my motivation for graduate (PhD) study.
+
+	\vspace{0.2cm}
+
+	Although my primary focus has always been on project based learning, my avid interest in concise theoretical understanding of fundamental concepts, enabled me to constantly perform well in class. I completed my bachelors from Jadavpur University with a CGPA 8.9/10 (absolute grading) securing a departmental rank of 3rd/125 students. In my post-graduation degree from IIT Bombay, I obtained a CPI of 9.81/10 securing a class rank of 2nd out of 24 graduate students in my specialization.
+	
+	\vspace{0.2cm}
+	
+	Up until my M.Tech, I was primarily involved in an academic environment with limited knowledge about industrial research. Therefore in 2014, I decided to join NEC Central Research Labs to gain more insight about the practical problems in my field of interest. My research topic was developing computer vision methods for deterioration detection in concrete surfaces. In 2015, I developed an algorithm which analyzes motion fields obtained by frame-wise optical flow from captured videos to find local strain discontinuity. The main advantage of my proposed method is the use of motion rather than image intensity which enabled internal crack detection that are not visible in the captured image frames. I formulated crack localization as an energy minimization problem in Conditional Random Fields (CRF) framework with a prior on spatial distribution of cracks to enable robust structured crack detection. This work is currently under review for WACV 2017. I am currently working to improve crack detection by developing a neural attention based crack contour tracking using Recurrent Fully Convolutional Networks for local crack segmentation with fully differentiable read and write operation for shifting visual attention. At NEC labs Japan, I was also involved in other projects like reconstructing 3D non-rigid deformations under vehicular loading on concrete slabs from monocular image sequences and phase based video motion magnification (based on MIT CSAIL) for analyzing minute motion patterns in concrete around cracks. Recently, I was involved in a project on accelerating inference in convolutional neural networks which was published in Workshop on Synthesis and System Integration of Mixed Information 2016. Along-side research at NEC, I also pursue personal research on fully convolutional image restoration, texture generation by generative adversarial networks (GANs) and on other topics. Details about all my projects and my full publication list can be found at my website: \url{https://sites.google.com/site/subhaweb1411/}. The research projects at NEC along with my personal projects have immensely helped me to keep up with the recent trends in the field of computer vision and deep learning and have provided me the necessary groundwork to uncover interesting problems to pursue in my PhD studies. 
+	
+	\vspace{0.2cm}
+	
+	I believe that there is an immense scope of research in deep learning based computational photography and data-driven 3D geometry analysis. Huge amount of data is available at present due to availability of cheap light-field capturing devices making data driven computational photography a very feasible and exciting topic of research in the coming decade. Through my research in graduate school, I wish to develop data-driven systems for richer image manipulation (like synthesizing novel viewpoints, refocusing based on depth of field, recoloring surfaces based on surface reflectance etc.) and 3D geometry reconstruction (like end-to-end dense depth recovery) from light-field data. I am open to work on other topics related in the field of computer vision and graphics as well.
+	
+	\vspace{0.2cm}
+	
+	At the University of California, San Diego (UCSD), I am interested to work with Prof. Ravi Ramamoorthi who is extensively working with light fields. I am particularly intrigued by his work on angular coherence based shading constraint for depth estimation and his recent work on deep learning based view synthesis from light-field data. I have contacted him for possible openings in his lab and he has encouraged me to apply. I am also interested in Prof. David Kriegman's work on learning discriminative low-dimensional concept embedding from expert suggestions by humans while preserving the structure of machine learned embedding. Given my goals and relevant research experience in 3D deformable object modeling, probabilistic graphical models and deep learning, I believe that I can significantly contribute to the ongoing research at the Vision lab in UCSD.
+	
+	\vspace{0.2cm}
+	
+	It is with the above mentioned goal that I want to pursue my Ph.D. I am looking forward to associate myself with a well-equipped environment where I can actively participate in cutting-edge research endeavors under the guidance of highly esteemed supervisors. I shall be extremely grateful if I am given the opportunity to join the graduate division of your esteemed university. Having decided my long term goals and knowing the reputation of your university and faculty, I am well aware of the high level of dedication, resilience and resolve required and I can guarantee my commitment to this cause. I would like to take this opportunity to thank the graduate admissions committee for considering my application and should I be selected, I shall look forward to a long and mutually beneficial association with the acclaimed School of Electrical and Computer Engineering of the University of California, San Diego.
+	
+\end{document}
