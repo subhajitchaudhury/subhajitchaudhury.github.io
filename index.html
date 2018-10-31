@@ -123,6 +123,41 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          
+          <!--Subha's AAAI Submission-->
+          <tr onmouseout="arxiv_vigan_stop()" onmouseover="arxiv_vigan_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='arxiv_vigan_image'><img src='images/arxiv_vigan/before.png'></div>
+                <img src='images/arxiv_vigan/before.png'>
+              </div>
+              <script type="text/javascript">
+                function arxiv_vigan_start() {
+                  document.getElementById('arxiv_vigan_image').style.opacity = "1";
+                }
+
+                function arxiv_vigan_stop() {
+                  document.getElementById('arxiv_vigan_image').style.opacity = "0";
+                }
+                arxiv_vigan_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/pdf/1806.01267.pdf">
+                <papertitle>https://arxiv.org/abs/1810.01108</papertitle>
+              </a>
+              <br>
+              <strong>Subhajit Chaudhury</strong>, Daiki Kimura, Tu-Hoa Pham, Asim Munawar and Ryuki Tachibana
+              <br>
+              <em>arXiv preprint arXiv:1810.01108.</em>, 2018
+              <br>
+              <a href="https://arxiv.org/abs/1810.01108">arxiv</a> /
+              <a href="https://www.youtube.com/watch?v=bvNpV2Q4rOA">video</a>
+              <p></p>
+              <!--<p>Learn an internal model of observation to estimate rewards without completely learning the dynamics-->
+                <!--of the external environment for imitation learning from observations.</p>-->
+            </td>
+          </tr>
 
           <!--Daiki's ICML WS-->
           <tr onmouseout="icml2018_stop()" onmouseover="icml2018_start()">
